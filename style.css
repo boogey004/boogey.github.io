@@ -1,17 +1,12 @@
-/* Professional site stylesheet ------------------------------------------------
-	 Clean, readable defaults, responsive typography, neutral color palette,
-	 utility classes and components for common layouts.
------------------------------------------------------------------------------*/
 
-/* Reset & base ---------------------------------------------------------------*/
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
 	margin:0;
 	font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 	line-height:1.6;
-	color:#04163d; /* gray-900 */
-	background:#917f07; /* gray-50 */
+	color:#04163d; 
+	background:#917f07; 
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
 }
@@ -20,13 +15,12 @@ img,picture,video,canvas,svg{max-width:100%;display:block}
 a{color:#1f6feb;text-decoration:none}
 a:hover{text-decoration:underline}
 
-/* Layout helpers -------------------------------------------------------------*/
 .container{width:100%;max-width:1100px;margin:0 auto;padding:0 1rem}
 .row{display:flex;flex-wrap:wrap;margin:-0.75rem}
 .col{padding:0.75rem;flex:1}
 .center{text-align:center}
 
-/* Typography -----------------------------------------------------------------*/
+
 h1,h2,h3,h4{margin:0 0 0.5rem;color:#0f172a}
 h1{font-size:2rem;font-weight:600}
 h2{font-size:1.5rem;font-weight:600}
@@ -34,37 +28,35 @@ h3{font-size:1.125rem;font-weight:600}
 p{margin:0 0 1rem}
 small{font-size:0.875rem;color:#6b7280}
 
-/* Navigation -----------------------------------------------------------------*/
+
 .nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
 .nav .brand{font-weight:700;color:#0f172a}
 .nav .links{display:flex;gap:1rem}
 
-/* Cards ----------------------------------------------------------------------*/
+
 .card{background:#fff;border:1px solid rgba(15,23,42,0.04);border-radius:8px;padding:1rem;box-shadow:0 1px 2px rgba(15,23,42,0.04)}
 .card--padded{padding:1.5rem}
 
-/* Buttons --------------------------------------------------------------------*/
+
 .btn{display:inline-block;padding:0.5rem 0.9rem;border-radius:6px;font-weight:600;border:none;cursor:pointer}
 .btn--primary{background:#2563eb;color:#fff}
 .btn--secondary{background:#eef2ff;color:#1e293b}
 .btn:disabled{opacity:0.6;cursor:not-allowed}
 
-/* Forms ----------------------------------------------------------------------*/
+
 input,textarea,select{width:100%;padding:0.6rem 0.75rem;border:1px solid #e6edf3;border-radius:6px;background:#fff;color:inherit}
 label{display:block;margin-bottom:0.25rem;font-weight:600}
 
-/* Footer ---------------------------------------------------------------------*/
+
 .footer{padding:2rem 0;border-top:1px solid rgba(15,23,42,0.04);color:#475569;font-size:0.95rem}
 
-/* Utilities ------------------------------------------------------------------*/
+
 .muted{color:#6b7280}
 .stack > * + *{margin-top:1rem}
 .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
 
-/* Responsive tweaks ---------------------------------------------------------*/
+
 @media (min-width:768px){
 	h1{font-size:2.25rem}
 	.nav .links{gap:1.25rem}
 }
-
-/* End of stylesheet ---------------------------------------------------------*/
